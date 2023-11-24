@@ -25,6 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -36,12 +37,17 @@ class _SplashScreenState extends State<SplashScreen> {
                     child: Text(
                       "Incredible India",
                       style: GoogleFonts.ephesis(
-                          fontSize: 55, fontWeight: FontWeight.w600),
+                          color: Colors.white,
+                          fontSize: 55,
+                          fontWeight: FontWeight.w600),
                     ),
                   ),
                   Text(
                     "Tourism app",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
                   )
                 ],
               ))
